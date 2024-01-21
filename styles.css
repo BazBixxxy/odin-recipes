@@ -1,8 +1,70 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 100%;
+  font-weight: 300;
+  /* margin: 0px auto */
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 2.5s ease all;
 }
 
 h1 {
+  font-weight: 600;
+  font-family: "Rubik Burned", system-ui;
+  color: rgb(197, 128, 0);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.recipe {
+  margin: 20px;
+}
+
+.top {
+  overflow: hidden;
+  z-index: 1;
+}
+
+.top:hover img {
+  transform: scale(1.1);
+}
+
+.top:hover {
+  scale: 1;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.name {
+  font-size: 1.8em;
   font-weight: 400;
+}
+
+.recipe-info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.profile {
+  width: 32px;
+  height: 30px;
+  border-radius: 50px;
+  margin-top: 8px;
+}
+
+
+.fa-star{
+  color: orange;
 }
